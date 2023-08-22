@@ -31,7 +31,7 @@ const books = [
 
 
 app.get("/api/books", (req,res)=>{
-    res.json(books);
+    res.status(200).json(books);
 })
 
 app.get("/api/books/:id", (req,res)=>{
